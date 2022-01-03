@@ -1,6 +1,6 @@
 I 2022
 
-This file is a guide to the code underlying figures and results for Cook, Bull, Gomulkiewicz:  Gene drive escape from resistance depends on mechanism and ecology.  Several files of code are provided, each corresponding to a different figure.  Running the code will not generate all the data used in any figure but will allow a piecemeal recreation of the data in figures; the code may be trivially modified with loops to generate more exhaustive output.
+This file is a guide to the code underlying figures and results for Cook, Bull, Gomulkiewicz:  Gene drive escape from resistance depends on mechanism and ecology.  Several files of code are provided, each corresponding to a different figure. The files included contain all the code necessary to generate the data for all figures, however, some simple mathematics and/or interpretation of output data may be necessary in order to recreate the figures. The repository contains two directories one with the code used to generate the figures excluding figure two, which takes data from the figure 3 file and a trival modification to the figure 1 file. the second contains the underling models for the first
 
 The gene frequency recursions in these programs evolution calculate offspring genotype numbers by exhaustive enumeration of all possible parental matings, multiplied by the fraction of gamete or offspring types produced by the parental genotypes.
 
@@ -28,3 +28,6 @@ Fig. 2 (1 homing drive and sib mating)
 Fig. 3 (ClvR and sib mating)
 
 Fig. 5, 6 (ecology)
+	
+	
+
