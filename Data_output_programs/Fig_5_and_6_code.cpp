@@ -254,6 +254,25 @@ void run_case(float br, float S,float viability_in,float d_cc,float DDcc, int d_
 
 }
 
+//explanation of the original code
+/*printf("input:  \n\
+births of d- moms, birth decrement to DD moms (s_f),
+viability decrement to DD progeny (s_v), -- happens before the effect of K
+carrying capacity of d-, decrement to carrying capacity of DD (s_K), and
+inner loop and outer loop");
+printf("births of DD will be (1-s_f), viability of DD (1-s_v), carrying capacity of DD will be (1-s_K)");
+printf("births are of males and females, so females are births/2");
+*/
+
+//params: 
+
+// br - birth rate
+// S - s_f birth rate decrement to DD moms
+// viablity_in - s_v viability decrment to DD progeny.
+// d_cc - K of d- indivials 
+// DDcc - K of the drive homozygotes
+// r_f - reistanse frequancy
+// total_pop - total populaiton
 
 float run_case_csv(float br, float S, float viability_in, float d_cc, float DDcc, int d_f, int r_f, int total_pop) {
 
