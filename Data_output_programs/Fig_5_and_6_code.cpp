@@ -947,6 +947,10 @@ void no_knockdown_n(FILE* of, int n) {
 }
 
 
+//
+// the permater s_v is used in the program
+// s_f is not used however it is included for the case where the fitness effect is
+// in females only.
 int main()
 {
 	//This code was used to generate the data for figure 6.
@@ -965,7 +969,11 @@ int main()
 	//***********************************************************
 
 
-
+	//
+	//This produces two outpute files one 
+	//One has data file without knockdown, the other data file with knockdown
+	//
+	//
 	FILE* of = fopen("Data3.csv", "w");
 	fprintf(of, "status, k, sv \n");
 
